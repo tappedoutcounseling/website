@@ -5,12 +5,12 @@ html, body {
   font-family: sans-serif;
 }
 
-head {
-  display: none;
-}
-
-body {
-  width: 100%;
+/*head{
+	display: none;
+}*/
+#wrapper {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

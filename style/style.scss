@@ -5,12 +5,13 @@ html,body{
 	font-family: sans-serif;
 }
 
-head{
+/*head{
 	display: none;
-}
+}*/
 
-body{
-	background-color: 000000;
+#wrapper {
+	max-width: 960px;
+	margin: 0 auto;
 }
 
 #landing {
