@@ -5,12 +5,28 @@ html, body {
   font-family: sans-serif;
 }
 
-/*head{
-	display: none;
-}*/
 #wrapper {
   max-width: 960px;
   margin: 0 auto;
+}
+#wrapper #landing {
+  display: grid;
+  justify-content: center;
+  border: 2px solid purple;
+}
+#wrapper #landing img {
+  justify-self: center;
+}
+#wrapper #landing h1 {
+  font-size: 3em;
+}
+#wrapper #landing h1, #wrapper #landing p {
+  text-align: center;
+}
+#wrapper #about {
+  display: grid;
+  align-content: center;
+  border: 2px solid purple;
 }
 
 /*# sourceMappingURL=style.css.map */
