@@ -18,7 +18,7 @@ html, body {
   justify-self: center;
 }
 #wrapper #landing h1 {
-  font-size: 3em;
+  font-size: 4rem;
 }
 #wrapper #landing h1, #wrapper #landing p {
   text-align: center;
