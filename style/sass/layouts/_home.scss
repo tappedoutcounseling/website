@@ -1,0 +1,34 @@
+//used to figure out placement of objects/sections
+$section-border: 2px solid purple;
+
+body{
+	margin: 0;
+	font-size: 16 px;
+	font-family: sans-serif;
+}
+
+#wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+
+	#hero {
+		display: grid;
+		justify-content: center;
+		border: $section-border;
+
+		img {
+			justify-self: center;
+		}
+
+		h1, p {
+			text-align: center;
+		}
+
+	}
+
+	#about {
+		display:grid;
+		align-content: center;
+		border: $section-border;
+	  }
+}
