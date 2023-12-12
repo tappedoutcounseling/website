@@ -18,6 +18,31 @@ $section-border: 2px solid purple;
 	--fw-regular: 400;
 	--fw-bold: 700;
 
+	--fs-400: 1rem; //body
+	--fs-500: 1.25rem; //subheadings
+	--fs-600: 1.5rem; //nav and nuttons
+	--fs-700: 3rem; //headings
+	--fs-800: 4rem; //hero heading
+
+	--fs-body: var(--fs-400);
+	--fs-nav: var(--fs-600);
+	--fs-button: var(--fs-600);
+	--fs-subheading: var(--fs-500);
+	--fs-heading: var(--fs-700);
+	--fs-heroheading: var(--fs-800);
+
+}
+
+@media (min-width: 50em){
+	:root{
+
+	--fs-700: 4rem; //headings
+	--fs-800: 5.313rem; //hero heading
+
+	--fs-heading: var(--fs-700);
+	--fs-heroheading: var(--fs-800);
+
+	}
 }
 
 //* Andy Bell CSS Reset Code src=(https://andy-bell.co.uk/a-more-modern-css-reset/) //*
