@@ -15,6 +15,7 @@
   --fs-600: 1.5rem;
   --fs-700: 3rem;
   --fs-800: 4rem;
+  --fs-900: 5.313rem;
   --fs-body: var(--fs-400);
   --fs-nav: var(--fs-600);
   --fs-button: var(--fs-600);
@@ -25,10 +26,8 @@
 
 @media (min-width: 50em) {
   :root {
-    --fs-700: 4rem;
-    --fs-800: 5.313rem;
-    --fs-heading: var(--fs-700);
-    --fs-heroheading: var(--fs-800);
+    --fs-heading: var(--fs-800);
+    --fs-heroheading: var(--fs-900);
   }
 }
 /* Box sizing rules */
@@ -152,6 +151,47 @@ body {
   display: grid;
   align-content: center;
   border: 2px solid purple;
+}
+
+/* Utility Classes */
+.ff-primary {
+  font-family: var(--ff-primary);
+}
+
+.ff-heading {
+  font-family: var(--ff-heading);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fs-body {
+  font-size: var(--fs-body);
+}
+
+.fs-nav {
+  font-size: var(--fs-nav);
+}
+
+.fs-button {
+  font-size: var(--fs-button);
+}
+
+.fs-subheading {
+  font-size: var(--fs-subheading);
+}
+
+.fs-heading {
+  font-size: var(--fs-heading);
+}
+
+.fs-heroheading {
+  font-size: var(--fs-heroheading);
 }
 
 /*# sourceMappingURL=style.css.map */

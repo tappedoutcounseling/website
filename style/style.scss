@@ -18,11 +18,12 @@ $section-border: 2px solid purple;
 	--fw-regular: 400;
 	--fw-bold: 700;
 
-	--fs-400: 1rem; //body
-	--fs-500: 1.25rem; //subheadings
-	--fs-600: 1.5rem; //nav and nuttons
-	--fs-700: 3rem; //headings
-	--fs-800: 4rem; //hero heading
+	--fs-400: 1rem; //16px
+	--fs-500: 1.25rem; //20px
+	--fs-600: 1.5rem; //24px
+	--fs-700: 3rem; //48px
+	--fs-800: 4rem; //64px
+	--fs-900: 5.313rem; //85px
 
 	--fs-body: var(--fs-400);
 	--fs-nav: var(--fs-600);
@@ -37,11 +38,8 @@ $section-border: 2px solid purple;
 @media (min-width: 50em){
 	:root{
 
-	--fs-700: 4rem; //headings
-	--fs-800: 5.313rem; //hero heading
-
-	--fs-heading: var(--fs-700);
-	--fs-heroheading: var(--fs-800);
+	--fs-heading: var(--fs-800);
+	--fs-heroheading: var(--fs-900);
 
 	}
 }
@@ -155,8 +153,6 @@ body{
 	max-width: 960px;
 	margin: 0 auto;
 
-
-
 	#landing {
 		display: grid;
 		justify-content: center;
@@ -176,8 +172,6 @@ body{
 
 	}
 
-
-
 	#about {
 		display:grid;
 		align-content: center;
@@ -185,7 +179,37 @@ body{
 	  }
 }
 
+/* Utility Classes */
 
+.ff-primary {
+	font-family: var(--ff-primary);
+}
+.ff-heading {
+	font-family: var(--ff-heading);
+}
 
+.fw-regular {
+	font-weight: var(--fw-regular);
+}
+.fw-bold {
+	font-weight: var(--fw-bold);
+}
 
-
+.fs-body {
+	font-size: var(--fs-body);
+}
+.fs-nav {
+	font-size: var(--fs-nav);
+}
+.fs-button {
+	font-size: var(--fs-button);
+}
+.fs-subheading {
+	font-size: var(--fs-subheading);
+}
+.fs-heading {
+	font-size: var(--fs-heading);
+}
+.fs-heroheading {
+	font-size: var(--fs-heroheading);
+}
