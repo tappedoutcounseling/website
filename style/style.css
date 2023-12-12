@@ -141,9 +141,6 @@ body {
 #wrapper #landing img {
   justify-self: center;
 }
-#wrapper #landing h1 {
-  font-size: 4rem;
-}
 #wrapper #landing h1, #wrapper #landing p {
   text-align: center;
 }
