@@ -1,5 +1,5 @@
+//used to figure out placement of objects/sections
 $section-border: 2px solid purple;
-
 
 :root {
 	--darkViolet: #1D096C;
@@ -33,6 +33,7 @@ $section-border: 2px solid purple;
 
 }
 
+//media query for responsive font size
 @media (min-width: 50em){
 	:root{
 
