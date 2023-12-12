@@ -1,181 +1,19 @@
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @use "../abstracts" as *;
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   base\_root.scss 1:1   @forward
+ *   base\_index.scss 2:1  @use
+ *   main.scss 4:1         root stylesheet */
 
-/* Prevent font size inflation */
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-}
-
-/* Remove default margin in favour of better control in authored CSS */
-* {
-  margin: 0;
-  padding: 0;
-  font: inherit;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
-  list-style: none;
-}
-
-html, body {
-  height: 100%;
-}
-
-/* Set core body defaults */
-body {
-  line-height: 1.5;
-}
-
-/* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
-  line-height: 1.1;
-}
-
-/* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
-  text-wrap: balance;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  color: currentColor;
-}
-
-/* Make images easier to work with */
-img,
-picture,
-svg {
-  max-width: 100%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"../abstracts\" as *;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   base\\_root.scss 1:1   @forward\a   base\\_index.scss 2:1  @use\a   main.scss 4:1         root stylesheet";
 }
-
-/* Make sure textareas without a rows attribute are not tiny */
-textarea:not([rows]) {
-  min-height: 10em;
-}
-
-/* Anything that has been anchored to should have extra scroll margin */
-:target {
-  scroll-margin-block: 5ex;
-}
-
-/*@use "components";
-@use "layout";
-@use "utilities"; */
-:root {
-  --darkViolet: #1D096C;
-  --darkPlum: #352967;
-  --lightPurple: #AFBCDC;
-  --mediumYellow: #FFBE5C;
-  --lightYellow: #FFDBA5;
-  --mediumPink: #E8A4C8;
-  --lightPink: #EAC8D9;
-}
-
-@media (min-width: 50em) {
-  :root {
-    --fs-heading: var(--fs-800);
-    --fs-heroheading: var(--fs-900);
-  }
-}
-body {
-  margin: 0;
-  font-size: 16 px;
-  font-family: sans-serif;
-}
-
-/*header {
-	position: sticky;
-	top: 0;
-
-	nav {
-
-		ul {
-			list-style: none;
-			display: flex;
-			flex-direction: row;
-			flex-wrap: nowrap;
-			justify-content: flex-end;
-
-			li {
-				padding: 1.5em;
-			}
-		}
-	} 
-
-}
-*/
-#wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-}
-#wrapper #hero {
-  display: grid;
-  justify-content: center;
-  border: 2px solid purple;
-}
-#wrapper #hero img {
-  justify-self: center;
-}
-#wrapper #hero h1, #wrapper #hero p {
-  text-align: center;
-}
-#wrapper #about {
-  display: grid;
-  align-content: center;
-  border: 2px solid purple;
-}
-
-/* Utility Classes */
-.ff-base {
-  font-family: var(--ff-base);
-}
-
-.ff-accent {
-  font-family: var(--ff-accent);
-}
-
-.fw-regular {
-  font-weight: var(--fw-regular);
-}
-
-.fw-bold {
-  font-weight: var(--fw-bold);
-}
-
-.fs-body {
-  font-size: var(--fs-body);
-}
-
-.fs-nav {
-  font-size: var(--fs-nav);
-}
-
-.fs-button {
-  font-size: var(--fs-button);
-}
-
-.fs-subheading {
-  font-size: var(--fs-subheading);
-}
-
-.fs-heading {
-  font-size: var(--fs-heading);
-}
-
-.fs-heroheading {
-  font-size: var(--fs-heroheading);
-}
-
-/*# sourceMappingURL=main.css.map */
