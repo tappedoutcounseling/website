@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+
+/* Utility Classes */
+.ff-base {
+	font-family: $ff-base;
+}
+.ff-accent {
+	font-family: $ff-accent;
+}
+
+.fw-regular {
+	font-weight: $fw-regular;
+}
+.fw-bold {
+	font-weight: $fw-bold;
+}
+
+.fs-body {
+	font-size: $fs-body;
+}
+.fs-nav {
+	font-size: $fs-nav;
+}
+.fs-button {
+	font-size: $fs-button;
+}
+.fs-subheading {
+	font-size: $fs-subheading;
+}
+.fs-heading {
+	font-size: $fs-heading;
+}
+.fs-heroheading {
+	font-size: $fs-heroheading;
+}
