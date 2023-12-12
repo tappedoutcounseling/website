@@ -1,10 +1,10 @@
+@use "../abstracts" as *;
+
 //used to figure out placement of objects/sections
 $section-border: 2px solid purple;
 
 body{
 	margin: 0;
-	font-size: 16 px;
-	font-family: sans-serif;
 }
 
 #wrapper {

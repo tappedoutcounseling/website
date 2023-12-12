@@ -81,8 +81,6 @@ textarea:not([rows]) {
 
 body {
   margin: 0;
-  font-size: 16 px;
-  font-family: sans-serif;
 }
 
 #wrapper {
