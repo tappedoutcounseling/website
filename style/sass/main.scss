@@ -1,0 +1,120 @@
+//used to figure out placement of objects/sections
+$section-border: 2px solid purple;
+
+@use "base";
+/*@use "components";
+@use "layout";
+@use "utilities"; */
+
+:root {
+	--darkViolet: #1D096C;
+	--darkPlum : #352967;
+	--lightPurple:  #AFBCDC;
+
+	--mediumYellow: #FFBE5C;
+	--lightYellow: #FFDBA5;
+
+	--mediumPink: #E8A4C8;
+	--lightPink: #EAC8D9;
+}
+
+//media query for responsive font size
+@media (min-width: 50em){
+	:root{
+
+	--fs-heading: var(--fs-800);
+	--fs-heroheading: var(--fs-900);
+
+	}
+}
+
+
+body{
+	margin: 0;
+	font-size: 16 px;
+	font-family: sans-serif;
+}
+
+
+/*header {
+	position: sticky;
+	top: 0;
+
+	nav {
+
+		ul {
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-end;
+
+			li {
+				padding: 1.5em;
+			}
+		}
+	} 
+
+}
+*/
+
+#wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+
+	#hero {
+		display: grid;
+		justify-content: center;
+		border: $section-border;
+
+		img {
+			justify-self: center;
+		}
+
+		h1, p {
+			text-align: center;
+		}
+
+	}
+
+	#about {
+		display:grid;
+		align-content: center;
+		border: $section-border;
+	  }
+}
+
+/* Utility Classes */
+
+.ff-base {
+	font-family: var(--ff-base);
+}
+.ff-accent {
+	font-family: var(--ff-accent);
+}
+
+.fw-regular {
+	font-weight: var(--fw-regular);
+}
+.fw-bold {
+	font-weight: var(--fw-bold);
+}
+
+.fs-body {
+	font-size: var(--fs-body);
+}
+.fs-nav {
+	font-size: var(--fs-nav);
+}
+.fs-button {
+	font-size: var(--fs-button);
+}
+.fs-subheading {
+	font-size: var(--fs-subheading);
+}
+.fs-heading {
+	font-size: var(--fs-heading);
+}
+.fs-heroheading {
+	font-size: var(--fs-heroheading);
+}
