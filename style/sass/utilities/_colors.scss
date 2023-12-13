@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+/* Utility Classes */
+
+//Background Colors
+.bc-darkViolet {
+	background-color: $darkViolet;
+}
+.bc-darkPlum {
+	background-color: $darkPlum;
+}
+.bc-lightPurple {
+	background-color: $lightPurple;
+}
+.bc-mediumYellow {
+	background-color: $mediumYellow;
+}
+.bc-lightYellow {
+	background-color: $lightYellow;
+}
+.bc-mediumPink {
+	background-color: $mediumPink;
+}
+.bc-lightPink {
+	background-color: $lightPink;
+}

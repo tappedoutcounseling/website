@@ -137,4 +137,61 @@ body {
   font-size: 4rem;
 }
 
+.fc-darkViolet {
+  color: #1D096C;
+}
+
+.fc-darkPlum {
+  color: #352967;
+}
+
+.fc-lightPurple {
+  color: #AFBCDC;
+}
+
+.fc-mediumYellow {
+  color: #FFBE5C;
+}
+
+.fc-lightYellow {
+  color: #FFDBA5;
+}
+
+.fc-mediumPink {
+  color: #E8A4C8;
+}
+
+.fc-lightPink {
+  color: #EAC8D9;
+}
+
+/* Utility Classes */
+.bc-darkViolet {
+  background-color: #1D096C;
+}
+
+.bc-darkPlum {
+  background-color: #352967;
+}
+
+.bc-lightPurple {
+  background-color: #AFBCDC;
+}
+
+.bc-mediumYellow {
+  background-color: #FFBE5C;
+}
+
+.bc-lightYellow {
+  background-color: #FFDBA5;
+}
+
+.bc-mediumPink {
+  background-color: #E8A4C8;
+}
+
+.bc-lightPink {
+  background-color: #EAC8D9;
+}
+
 /*# sourceMappingURL=main.css.map */
