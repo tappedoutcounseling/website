@@ -75,27 +75,6 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-#wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-}
-#wrapper #hero {
-  display: grid;
-  justify-content: center;
-  border: 2px solid purple;
-}
-#wrapper #hero img {
-  justify-self: center;
-}
-#wrapper #hero h1, #wrapper #hero p {
-  text-align: center;
-}
-#wrapper #about {
-  display: grid;
-  align-content: center;
-  border: 2px solid purple;
-}
-
 /* Utility Classes */
 .ff-base {
   font-family: "Raleway", sans-serif;
@@ -193,5 +172,7 @@ body {
 .bc-lightPink {
   background-color: #EAC8D9;
 }
+
+/* Utility Classes */
 
 /*# sourceMappingURL=main.css.map */
