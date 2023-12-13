@@ -174,5 +174,11 @@ body {
 }
 
 /* Utility Classes */
+.container {
+  --max-width: 1110px;
+  --padding: 2rem;
+  width: min(100% - var(--padding), var(--max-width));
+  margin-inline: auto;
+}
 
 /*# sourceMappingURL=main.css.map */

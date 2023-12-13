@@ -5,5 +5,9 @@
 //Containers
 
 .container {
-    
+    --max-width: 1110px;
+    --padding: 2rem;
+
+    width: min(100% - var(--padding), var(--max-width));
+    margin-inline: auto;
 }
