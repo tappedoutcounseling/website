@@ -71,7 +71,8 @@ textarea:not([rows]) {
 }
 
 body {
-  margin: 0;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
 }
 
 #wrapper {
