@@ -78,9 +78,6 @@ body {
 #hero .container {
   border: 2px solid purple;
 }
-#hero h1, #hero p {
-  text-align: center;
-}
 /* Utility Classes */
 .ff-base {
   font-family: "Raleway", sans-serif;
@@ -150,6 +147,10 @@ body {
   color: #EAC8D9;
 }
 
+.fa-center {
+  text-align: center;
+}
+
 /* Utility Classes */
 .bc-darkViolet {
   background-color: #1D096C;
@@ -185,18 +186,6 @@ body {
   --padding: 2rem;
   width: min(100% - var(--padding), var(--max-width));
   margin-inline: auto;
-}
-
-.even-columns {
-  display: grid;
-  gap: 1rem;
-}
-
-@media (min-width: 50em) {
-  .even-columns {
-    grid-auto-flow: columns;
-    grid-auto-columns: 1fr;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
