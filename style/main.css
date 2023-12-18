@@ -187,4 +187,16 @@ body {
   margin-inline: auto;
 }
 
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: columns;
+    grid-auto-columns: 1fr;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
