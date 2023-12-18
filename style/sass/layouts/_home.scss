@@ -18,11 +18,19 @@ $section-border: 2px solid purple;
         }
     }
 
-}
+} //end of #hero
 
 #about {
-    img {
-        width: 30%;
+
+    .container {
+
+        display: flex;
+
+        img {
+            width: 30%;
+        }
+
     }
-}
+
+} //end of #about
 

@@ -4,33 +4,42 @@ body {
     font-size: $fs-body;
     font-family: $ff-base;
 
-	h2 {
-		position: relative;
-		padding-bottom: .3em;
-
-		&:after {
-			content: '';
-			display: block;
-			width: 50%;
-			height: 10px;
-			border-radius: 6px;
-			background: $mediumPink;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-		}
-		
+	p {
+		padding-top: 2em;
 	}
 
-	#contact-title {
+	section {
 
-		&:after {
-			left: 0; 
-			right: 0; 
-			margin-left: auto; 
-			margin-right: auto; 	
+		padding-top: 3em;
+
+		h2 {
+			position: relative;
+			padding-bottom: .3em;
+
+			&:after {
+				content: '';
+				display: block;
+				width: 50%;
+				height: 10px;
+				border-radius: 6px;
+				background: $mediumPink;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+			
 		}
 
+		#contact-title {
+
+			&:after {
+				left: 0; 
+				right: 0; 
+				margin-left: auto; 
+				margin-right: auto; 	
+			}
+
+		}
 	}
 } 
 
