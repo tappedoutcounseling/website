@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-/* Utility Classes */
+/* Utility Classes and Mixins */
 
 //Containers
 
@@ -12,3 +12,18 @@
     margin-inline: auto;
 }
 
+//Rounded Border Outline
+@mixin color-border ($color) {
+    border: 15px solid $color;
+    border-radius: 30px;
+}
+
+.lightPurple-border {
+    @include color-border ($lightPurple);
+}
+
+.mediumPink-border {
+    @include color-border ($mediumPink);
+}
+
+//Button

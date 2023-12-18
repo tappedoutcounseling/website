@@ -78,6 +78,10 @@ body {
 #hero .container {
   border: 2px solid purple;
 }
+#about img {
+  width: 30%;
+}
+
 /* Utility Classes */
 .ff-base {
   font-family: "Raleway", sans-serif;
@@ -180,12 +184,22 @@ body {
   background-color: #EAC8D9;
 }
 
-/* Utility Classes */
+/* Utility Classes and Mixins */
 .container {
   --max-width: 1110px;
   --padding: 2rem;
   width: min(100% - var(--padding), var(--max-width));
   margin-inline: auto;
+}
+
+.lightPurple-border {
+  border: 15px solid #AFBCDC;
+  border-radius: 30px;
+}
+
+.mediumPink-border {
+  border: 15px solid #E8A4C8;
+  border-radius: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
