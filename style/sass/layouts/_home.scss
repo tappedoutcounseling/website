@@ -3,3 +3,18 @@
 //used to figure out placement of objects/sections
 $section-border: 2px solid purple;
 
+#hero {
+
+    .container{
+        border: $section-border;
+    }
+
+    h1, p {
+        text-align: center;
+    }
+
+    button {
+        
+    }
+
+}

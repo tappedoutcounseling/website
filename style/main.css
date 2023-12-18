@@ -75,6 +75,12 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+#hero .container {
+  border: 2px solid purple;
+}
+#hero h1, #hero p {
+  text-align: center;
+}
 /* Utility Classes */
 .ff-base {
   font-family: "Raleway", sans-serif;
