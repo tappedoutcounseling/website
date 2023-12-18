@@ -5,12 +5,17 @@ $section-border: 2px solid purple;
 
 #hero {
 
+    //background-image: linear-gradient(to right, $lightPink, $lightPurple);
+
+    background: url(../img/heroGradient.svg) no-repeat;
+    background-size: cover;
+
     .container{
-        border: $section-border;
-    }
 
-    button {
-
+        .button {
+            display: flex;
+            justify-content: center;
+        }
     }
 
 }

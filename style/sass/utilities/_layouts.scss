@@ -3,7 +3,6 @@
 /* Utility Classes and Mixins */
 
 //Containers
-
 .container {
     --max-width: 1110px;
     --padding: 2rem;
@@ -26,4 +25,11 @@
     @include color-border ($mediumPink);
 }
 
+.white-border {
+    @include color-border (white);
+}
+
 //Button
+.button {
+
+}
