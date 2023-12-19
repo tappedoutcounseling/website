@@ -36,7 +36,7 @@ $section-border: 2px solid purple;
 
     .counselingStyleLists {
         display: grid;
-        grid-template-columns: 15% 35% 35% 15%;
+        grid-template-columns: 1fr 2fr 2fr 1fr;
         grid-column-gap: 1em;
       
         .counselingStyleBox{
