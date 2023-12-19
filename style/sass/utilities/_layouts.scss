@@ -12,11 +12,6 @@
 }
 
 //Rounded Border Outline
-@mixin color-border ($color, $thickness, $radius) {
-    border: $thickness solid $color;
-    border-radius: $radius;
-}
-
 .lightPurple-border {
     @include color-border ($lightPurple, 15px, 30px);
 }

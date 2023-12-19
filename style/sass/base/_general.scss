@@ -8,6 +8,30 @@ body {
 		padding-top: 2em;
 	}
 
+	header {
+		//@include color-border (white, 15px, 5em);
+
+		.navbar {
+			display: flex;
+
+			ul {
+				display: flex;
+
+				a {
+					text-decoration: none;
+	
+					&:hover {
+						text-decoration: underline;
+						text-decoration-color: $mediumPink;
+					}
+				}
+			}
+
+			
+		}
+		
+	}
+
 	section {
 
 		padding-top: 3em;

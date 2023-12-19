@@ -15,6 +15,7 @@ $section-border: 2px solid purple;
             .button {
                 display: flex;
                 justify-content: center;
+                margin: 1.5em 0;
             }
         }
 
@@ -71,5 +72,21 @@ $section-border: 2px solid purple;
         }
 
     } //end of #counselingStyle
+
+    #contact {
+
+        .button {
+            margin: 1em 0;
+        }
+    } //end of #contact
+
+    footer {
+
+        @include color-border (white, 15px, 5em);
+
+        p {
+            padding-bottom: 2em;
+        }
+    } //end of footer
 
 } //end of #home

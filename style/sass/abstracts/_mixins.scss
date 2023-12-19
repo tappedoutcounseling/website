@@ -1,0 +1,4 @@
+@mixin color-border ($color, $thickness, $radius) {
+    border: $thickness solid $color;
+    border-radius: $radius;
+}

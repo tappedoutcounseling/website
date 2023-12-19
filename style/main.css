@@ -77,6 +77,19 @@ body {
 body p {
   padding-top: 2em;
 }
+body header .navbar {
+  display: flex;
+}
+body header .navbar ul {
+  display: flex;
+}
+body header .navbar ul a {
+  text-decoration: none;
+}
+body header .navbar ul a:hover {
+  text-decoration: underline;
+  text-decoration-color: #E8A4C8;
+}
 body section {
   padding-top: 3em;
 }
@@ -109,6 +122,7 @@ body section #contact-title:after {
 #home #hero .container .button {
   display: flex;
   justify-content: center;
+  margin: 1.5em 0;
 }
 #home #about .container {
   display: grid;
@@ -141,6 +155,16 @@ body section #contact-title:after {
   #home #counselingStyle .counselingStyleLists #specialties {
     grid-column: 2/3;
   }
+}
+#home #contact .button {
+  margin: 1em 0;
+}
+#home footer {
+  border: 15px solid white;
+  border-radius: 5em;
+}
+#home footer p {
+  padding-bottom: 2em;
 }
 
 /* Utility Classes */
