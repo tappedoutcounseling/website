@@ -112,10 +112,24 @@ body section #contact-title:after {
 }
 
 #about .container {
-  display: flex;
+  display: grid;
 }
 #about .container img {
   width: 30%;
+}
+
+#counselingStyle .counselingStyleLists {
+  display: grid;
+  grid-template-columns: 15% 35% 35% 15%;
+  grid-column-gap: 1em;
+}
+#counselingStyle .counselingStyleLists .counselingStyleBox {
+  background: url(../img/heroGradient.svg) no-repeat;
+  background-size: cover;
+  padding: 1em 0 1em 2em;
+}
+#counselingStyle .counselingStyleLists #specialties {
+  grid-column: 2/3;
 }
 
 /* Utility Classes */
@@ -234,7 +248,7 @@ body section #contact-title:after {
 }
 
 .mediumPink-border {
-  border: 15px solid #E8A4C8;
+  border: 10px solid #E8A4C8;
   border-radius: 30px;
 }
 

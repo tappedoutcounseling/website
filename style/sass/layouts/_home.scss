@@ -5,8 +5,6 @@ $section-border: 2px solid purple;
 
 #hero {
 
-    //background-image: linear-gradient(to right, $lightPink, $lightPurple);
-
     background: url(../img/heroGradient.svg) no-repeat;
     background-size: cover;
 
@@ -24,7 +22,7 @@ $section-border: 2px solid purple;
 
     .container {
 
-        display: flex;
+        display: grid;
 
         img {
             width: 30%;
@@ -34,3 +32,22 @@ $section-border: 2px solid purple;
 
 } //end of #about
 
+#counselingStyle {
+
+    .counselingStyleLists {
+        display: grid;
+        grid-template-columns: 15% 35% 35% 15%;
+        grid-column-gap: 1em;
+      
+        .counselingStyleBox{
+            background: url(../img/heroGradient.svg) no-repeat;
+            background-size: cover;
+            padding: 1em 0 1em 2em;
+        }
+
+        #specialties {
+            grid-column: 2/3;
+        }
+    }
+
+} //end of #counselingStyle

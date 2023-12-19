@@ -12,21 +12,21 @@
 }
 
 //Rounded Border Outline
-@mixin color-border ($color) {
-    border: 15px solid $color;
-    border-radius: 30px;
+@mixin color-border ($color, $thickness, $radius) {
+    border: $thickness solid $color;
+    border-radius: $radius;
 }
 
 .lightPurple-border {
-    @include color-border ($lightPurple);
+    @include color-border ($lightPurple, 15px, 30px);
 }
 
 .mediumPink-border {
-    @include color-border ($mediumPink);
+    @include color-border ($mediumPink, 10px, 30px);
 }
 
 .white-border {
-    @include color-border (white);
+    @include color-border (white, 15px, 30px);
 }
 
 //Button
