@@ -67,12 +67,4 @@ body {
 } 
 
 
-//media query for responsive font size
-@media (min-width: 50em){
-	:root{
 
-		$fs-heading: $fs-800;
-		$fs-heroheading: $fs-900;
-
-	}
-}

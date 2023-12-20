@@ -38,6 +38,23 @@
 	font-size: $fs-heroheading;
 }
 
+//media query for responsive font size
+@media (min-width: 50em){
+	:root {
+
+		$fs-heading: $fs-800;
+		$fs-heroheading: $fs-900;
+
+		.fs-heading {
+			font-size: $fs-heading;
+		}
+		.fs-heroheading {
+			font-size: $fs-heroheading;
+		}
+
+	}
+}
+
 //Font Colors
 .fc-darkViolet {
 	color: $darkViolet;
@@ -65,3 +82,4 @@
 .fa-center {
 	text-align: center;
 }
+
