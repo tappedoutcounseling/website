@@ -79,14 +79,18 @@ body p {
 }
 body header .navbar {
   display: flex;
+  align-items: center;
 }
 body header .navbar ul {
   display: flex;
 }
-body header .navbar ul a {
+body header .navbar ul li {
+  padding: 1em;
+}
+body header .navbar ul li a {
   text-decoration: none;
 }
-body header .navbar ul a:hover {
+body header .navbar ul li a:hover {
   text-decoration: underline;
   text-decoration-color: #E8A4C8;
 }

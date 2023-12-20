@@ -13,18 +13,31 @@ body {
 
 		.navbar {
 			display: flex;
+			//justify-content: flex-end;
+			align-items: center;
 
 			ul {
 				display: flex;
 
-				a {
-					text-decoration: none;
-	
-					&:hover {
-						text-decoration: underline;
-						text-decoration-color: $mediumPink;
+				li {
+
+					padding: 1em;
+
+					a {
+						text-decoration: none;
+		
+						&:hover {
+							text-decoration: underline;
+							text-decoration-color: $mediumPink;
+						}
 					}
+
 				}
+				
+			}
+
+			.button {
+				
 			}
 
 		}
