@@ -140,7 +140,7 @@ body section #contact-title:after {
   grid-gap: 1.5em;
 }
 #home #counselingStyle .counselingStyleLists .counselingStyleBox {
-  background: url(../img/heroGradient.svg) no-repeat;
+  background: url(../img/purplePinkGradient.svg) no-repeat;
   background-size: cover;
   padding: 1em 0 1em 2em;
 }
@@ -308,7 +308,7 @@ body section #contact-title:after {
 
 .gradientGridBackround {
   position: relative;
-  background: url(../img/heroGradient.svg) no-repeat;
+  background: url(../img/purplePinkGradient.svg) no-repeat;
   background-size: cover;
   overflow: hidden;
   isolation: isolate;
