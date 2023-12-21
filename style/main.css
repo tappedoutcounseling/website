@@ -79,7 +79,10 @@ body p {
 }
 body header .navbar {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
+  border: 15px solid white;
+  border-radius: 5em;
 }
 body header .navbar ul {
   display: flex;
