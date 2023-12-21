@@ -6,7 +6,8 @@ header {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        @include color-border (white, 15px, 5em);
+        @include color-border (white, 1rem, 5rem);
+      
 
         ul {
             display: flex;
