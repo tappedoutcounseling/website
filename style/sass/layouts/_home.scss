@@ -16,6 +16,15 @@ $section-border: 2px solid purple;
             }
         }
 
+        .cloudContainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            :last-child {
+                
+            }
+        }
+
     } //end of #hero
 
 
