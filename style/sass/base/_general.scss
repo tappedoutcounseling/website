@@ -8,42 +8,6 @@ body {
 		padding-top: 2em;
 	}
 
-	header {
-		
-
-		.navbar {
-			display: flex;
-			justify-content: flex-end;
-			align-items: center;
-			@include color-border (white, 15px, 5em);
-
-			ul {
-				display: flex;
-
-				li {
-
-					padding: 1em;
-
-					a {
-						text-decoration: none;
-		
-						&:hover {
-							text-decoration: underline;
-							text-decoration-color: $mediumPink;
-						}
-					}
-
-				}
-				
-			}
-
-			.button {
-				
-			}
-
-		}
-		
-	}
 
 	section {
 

@@ -1,6 +1,6 @@
-@use "../abstracts" as *;
+@use "../abstracts" as *; 
 
-/* Utility Classes and Mixins */
+/* Classes for Specific Components  */
 
 //Containers
 .container {
@@ -10,7 +10,7 @@
     width: min(100% - var(--padding), var(--max-width));
     margin-inline: auto;
 }
-
+ 
 //Rounded Border Outline
 .lightPurple-border {
     @include color-border ($lightPurple, 15px, 30px);
@@ -49,6 +49,7 @@
         background-size: cover;
         overflow: hidden;
         isolation: isolate;
+        background-position: bottom;
 
         &::before {
             content: '';
