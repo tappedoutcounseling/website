@@ -122,14 +122,29 @@ body section #contact-title:after {
   margin-right: auto;
 }
 
+#home #hero .container {
+  position: relative;
+  z-index: 1;
+}
 #home #hero .container .button {
   display: flex;
   justify-content: center;
   margin: 1.5em 0;
 }
 #home #hero .cloudContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  opacity: 0.8;
+}
+#home #hero .cloudContainer img {
+  width: 30%;
+}
+#home #hero .cloudContainer :first-child {
+  position: absolute;
+  bottom: 0;
+}
+#home #hero .cloudContainer :last-child {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 #home #about .container {
   display: grid;
