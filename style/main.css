@@ -199,9 +199,10 @@ header .navbar ul li a:hover {
   width: 250px;
   top: auto;
   bottom: -125px;
-  right: 2rem;
   left: auto;
+  right: 2rem;
   position: absolute;
+  z-index: 1;
 }
 #home #hero .container {
   position: relative;

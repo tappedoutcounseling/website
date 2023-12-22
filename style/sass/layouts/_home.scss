@@ -17,32 +17,11 @@ $section-border: 2px solid purple;
         overflow: visible;
 
         &::before {
-            content: '';
-            background-image: $sparkles;
-            background-size: contain;
-            background-repeat: no-repeat;
-            height: 250px;
-            width: 250px;
-            top: 2rem;
-            bottom: auto;
-            left: 2rem;
-            right: auto;
-            position: absolute;
-            z-index: 1;
+            @include sparkles (2rem, auto, 2rem, auto);
         }
 
         &::after {
-            content: '';
-            background-image: $sparkles;
-            background-size: contain;
-            background-repeat: no-repeat;
-            height: 250px;
-            width: 250px;
-            top: auto;
-            bottom: -125px;
-            right: 2rem;
-            left: auto;
-            position: absolute;
+            @include sparkles (auto, -125px, auto, 2rem);
         }
 
         .container{
@@ -145,18 +124,7 @@ $section-border: 2px solid purple;
         }
 
         &::before {
-            content: '';
-            background-image: $sparkles;
-            background-size: contain;
-            background-repeat: no-repeat;
-            height: 250px;
-            width: 250px;
-            top: 2rem;
-            bottom: auto;
-            left: 2rem;
-            right: auto;
-            position: absolute;
-            z-index: 1;
+            @include sparkles (2rem, auto, 2rem, auto);
         }
 
         

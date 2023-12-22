@@ -4,3 +4,18 @@
 }
 
 $sparkles: url(../img/sparkles.png);
+
+@mixin sparkles ($top, $bottom, $left, $right) {
+    content: '';
+    background-image: $sparkles;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+    position: absolute;
+    z-index: 1;
+}
