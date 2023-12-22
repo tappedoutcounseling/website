@@ -1,7 +1,10 @@
+//Mixin for Various Colored Borders
 @mixin color-border ($color, $thickness, $radius) {
     border: $thickness solid $color;
     border-radius: $radius;
 }
+
+// Variable and Mixins for Sparkles Asset
 
 $sparkles: url(../img/sparkles.png);
 
