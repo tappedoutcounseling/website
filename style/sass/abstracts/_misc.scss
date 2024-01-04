@@ -6,15 +6,32 @@
 
 // Variable and Mixins for Sparkles Asset
 
-$sparkles: url(../img/sparkles.png);
+$medSparkles: url(../img/medSparkles.svg);
+$lgSparkles: url(../img/lgSparkles.svg);
+$phone: url(../img/phone.svg);
 
-@mixin sparkles ($top, $bottom, $left, $right) {
+@mixin sparkles ($sparkleType, $top, $bottom, $left, $right) {
     content: '';
-    background-image: $sparkles;
+    background-image: $sparkleType;
     background-size: contain;
     background-repeat: no-repeat;
     height: 250px;
     width: 250px;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+    position: absolute;
+    z-index: 1;
+}
+
+@mixin phone ($top, $bottom, $left, $right) {
+    content: '';
+    background-image: $phone;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 220px;
     top: $top;
     bottom: $bottom;
     left: $left;

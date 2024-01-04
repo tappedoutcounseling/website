@@ -18,11 +18,11 @@ $section-border: 2px solid purple;
         overflow: visible;
 
         &::before {
-            @include sparkles (2rem, auto, 2rem, auto);
+            @include sparkles ($medSparkles, 2rem, auto, 2rem, auto);
         }
 
         &::after {
-            @include sparkles (auto, -125px, auto, 2rem);
+            @include sparkles ($lgSparkles, auto, -125px, auto, 2rem);
         }
 
         .container{
@@ -126,11 +126,11 @@ $section-border: 2px solid purple;
         }
 
         &::before {
-            @include sparkles (2rem, auto, 2rem, auto);
+            @include sparkles ($lgSparkles, 2rem, auto, 2rem, auto);
         }
 
         &::after {
-            @include sparkles (auto, -125px, auto, 2rem);
+            @include phone (auto, 0, auto, 0);
         }
 
         

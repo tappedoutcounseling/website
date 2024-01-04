@@ -178,7 +178,7 @@ header .navbar ul li a:hover {
 }
 #home #hero::before {
   content: "";
-  background-image: url(../img/sparkles.png);
+  background-image: url(../img/medSparkles.svg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 250px;
@@ -192,7 +192,7 @@ header .navbar ul li a:hover {
 }
 #home #hero::after {
   content: "";
-  background-image: url(../img/sparkles.png);
+  background-image: url(../img/lgSparkles.svg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 250px;
@@ -273,7 +273,7 @@ header .navbar ul li a:hover {
 }
 #home #contact::before {
   content: "";
-  background-image: url(../img/sparkles.png);
+  background-image: url(../img/lgSparkles.svg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 250px;
@@ -287,15 +287,15 @@ header .navbar ul li a:hover {
 }
 #home #contact::after {
   content: "";
-  background-image: url(../img/sparkles.png);
+  background-image: url(../img/phone.svg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 250px;
-  width: 250px;
+  width: 220px;
   top: auto;
-  bottom: -125px;
+  bottom: 0;
   left: auto;
-  right: 2rem;
+  right: 0;
   position: absolute;
   z-index: 1;
 }
