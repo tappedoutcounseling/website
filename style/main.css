@@ -79,7 +79,6 @@ body p {
 }
 body section {
   padding-top: 3em;
-  height: calc(100vh - 99px);
 }
 body section h2 {
   position: relative;
@@ -173,6 +172,7 @@ header .navbar ul li a:hover {
   flex-wrap: nowrap;
   border-radius: 30px;
   max-width: calc(100vw - 2rem);
+  height: calc(100vh - 99px);
   margin-inline: auto;
   overflow: visible;
 }
@@ -266,6 +266,7 @@ header .navbar ul li a:hover {
   flex-direction: column;
   justify-content: center;
   flex-wrap: nowrap;
+  overflow: visible;
 }
 #home #contact .button {
   margin: 1em 0;
@@ -281,6 +282,20 @@ header .navbar ul li a:hover {
   bottom: auto;
   left: 2rem;
   right: auto;
+  position: absolute;
+  z-index: 1;
+}
+#home #contact::after {
+  content: "";
+  background-image: url(../img/sparkles.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 250px;
+  top: auto;
+  bottom: -125px;
+  left: auto;
+  right: 2rem;
   position: absolute;
   z-index: 1;
 }

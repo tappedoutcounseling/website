@@ -13,6 +13,7 @@ $section-border: 2px solid purple;
         flex-wrap: nowrap;
         border-radius: 30px;
         max-width: calc(100vw - 2rem);
+		height: calc(100vh - 99px);
         margin-inline: auto;
         overflow: visible;
 
@@ -118,6 +119,7 @@ $section-border: 2px solid purple;
         flex-direction: column;
         justify-content: center;
         flex-wrap: nowrap;
+        overflow: visible;
 
         .button {
             margin: 1em 0;
@@ -125,6 +127,10 @@ $section-border: 2px solid purple;
 
         &::before {
             @include sparkles (2rem, auto, 2rem, auto);
+        }
+
+        &::after {
+            @include sparkles (auto, -125px, auto, 2rem);
         }
 
         
