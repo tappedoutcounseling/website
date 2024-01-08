@@ -75,14 +75,15 @@ body {
   font-family: "Raleway", sans-serif;
 }
 body p {
-  padding-top: 2em;
+  margin-bottom: 1rem;
 }
 body section {
-  padding-top: 3em;
+  padding: 3rem 1rem 2.5rem;
 }
 body section h2 {
   position: relative;
   padding-bottom: 0.3em;
+  margin-bottom: 1.5rem;
 }
 body section h2:after {
   content: "";
