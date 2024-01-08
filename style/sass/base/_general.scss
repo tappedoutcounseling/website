@@ -9,19 +9,22 @@ body {
 	}
 
 
-	section {
+	section:not(#hero) {
  
 		padding: 3rem 1rem 2.5rem;
 
+
+		//make h2 styles into utility classes
 		h2 {
 			position: relative;
 			padding-bottom: .3em;
 			margin-bottom: 1.5rem;
+			width: fit-content;
 
 			&:after {
 				content: '';
 				display: block;
-				width: 50%;
+				width: calc(100% + 5rem);
 				height: 10px;
 				border-radius: 6px;
 				background: $mediumPink;
