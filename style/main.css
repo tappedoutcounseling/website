@@ -90,6 +90,7 @@ body section:not(#hero) h2:after {
   content: "";
   display: block;
   width: calc(100% + 5rem);
+  max-width: calc(100vw - 4rem);
   height: 10px;
   border-radius: 6px;
   background: #E8A4C8;
@@ -236,6 +237,34 @@ header .navbar ul li a:hover {
     border-radius: 0;
     max-width: 100vw;
     height: 100vh;
+  }
+  #home #hero::before {
+    content: "";
+    background-image: url(../img/medSparkles.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 140px;
+    width: 134px;
+    top: 6rem;
+    bottom: auto;
+    left: 1rem;
+    right: auto;
+    position: absolute;
+    z-index: 1;
+  }
+  #home #hero::after {
+    content: "";
+    background-image: url(../img/lgSparkles.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 166px;
+    width: 163px;
+    top: auto;
+    bottom: -63px;
+    left: auto;
+    right: 1rem;
+    position: absolute;
+    z-index: 1;
   }
   #home #hero .cloudContainer img {
     width: 75vw;

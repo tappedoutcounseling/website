@@ -10,13 +10,13 @@ $medSparkles: url(../img/medSparkles.svg);
 $lgSparkles: url(../img/lgSparkles.svg);
 $phone: url(../img/phone.svg);
 
-@mixin sparkles ($sparkleType, $top, $bottom, $left, $right) {
+@mixin sparkles ($sparkleType, $top, $bottom, $left, $right, $height, $width) {
     content: '';
     background-image: $sparkleType;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 250px;
-    width: 250px;
+    height: $height;
+    width: $width;
     top: $top;
     bottom: $bottom;
     left: $left;

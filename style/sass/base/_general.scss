@@ -25,6 +25,7 @@ body {
 				content: '';
 				display: block;
 				width: calc(100% + 5rem);
+				max-width: calc(100vw - 4rem);
 				height: 10px;
 				border-radius: 6px;
 				background: $mediumPink;
