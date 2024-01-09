@@ -98,11 +98,13 @@ body section:not(#hero) h2:after {
   bottom: 0;
   left: 0;
 }
-body section:not(#hero) #contact-title:after {
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+body section:not(#hero) .centerAlignHeading {
+  margin-inline: auto;
+}
+body section:not(#hero) .centerAlignHeading:after {
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
 }
 
 header .navbar {
