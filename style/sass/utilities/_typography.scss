@@ -39,21 +39,40 @@
 }
 
 //media query for responsive font size
-@media (min-width: 50em){
-	:root {
 
-		$fs-heading: $fs-800;
-		$fs-heroheading: $fs-900;
+	//larger screens
+	@media (min-width: 50em) {
+		:root {
 
-		.fs-heading {
-			font-size: $fs-heading;
+			$fs-heading: $fs-800;
+			$fs-heroheading: $fs-900;
+
+			.fs-heading {
+				font-size: $fs-heading;
+			}
+			.fs-heroheading {
+				font-size: $fs-heroheading;
+			}
+
 		}
-		.fs-heroheading {
-			font-size: $fs-heroheading;
-		}
-
 	}
-}
+
+	//mobile screens
+	@media (max-width: 768px) {
+		:root {
+
+			$fs-button: $fs-500;
+			$fs-subheading: $fs-500;
+
+			.fs-button {
+				font-size: $fs-button;
+			}
+			.fs-subheading {
+				font-size: $fs-subheading;
+			}
+
+		}
+	}
 
 //Font Colors
 .fc-darkViolet {

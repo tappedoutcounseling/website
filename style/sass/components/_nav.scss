@@ -1,6 +1,5 @@
 @use "../abstracts" as *;  
 header {
-		
 
     .navbar {
         display: flex;
@@ -27,10 +26,49 @@ header {
 
             }
             
-        }
+        }     
 
-        
+    }//end of navbar
 
-    }
+    .mobileNavbar {
+        display: none;
+    }//end of mobileNavbar
+
+    //start of nav mobile styles
+    @media (max-width: 768px ) { 
+
+        .navbar {
+            display: none;
+        }//end of navbar
+
+        .mobileNavbar {
+            overflow: hidden;
+            display: block;
+
+            .mobileNavContent {
+                display: none;
+            }
+
+            .pancake {
+                float: right;
+                display: block;
+            }
+
+            .responsive {
+                position: relative;
+
+                .pancake {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .mobileNavContent {
+                    display: block;
+                }
+            }
+        }//end of mobileNavbar
+
+    }//end of nav mobile styles
     
-}
+} //end of header

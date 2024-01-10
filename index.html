@@ -16,6 +16,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style/main.css">
         <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body id="home">
@@ -33,9 +34,34 @@
                 </nav>
 
                 <div class="button">
-                    <button class="button">Contact</button>
+                    <button class="button fs-button">Contact</button>
                 </div>
                 <!-- end of navigation bar -->
+            </div> <!-- end of navbar -->
+
+            <div id="mobileNav" class="mobileNavbar">
+                <!-- start of mobile navigation bar -->
+                <a href="javascript:void(0);" class="pancake icon" onclick="expandMobileNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+                <div class="mobileNavContent bc-darkPlum">
+                    <img src="https://placehold.co/75x75/DE8CB8/1F3A7D" alt="logo" class="logo">
+
+                    <nav class="ff-accent fs-nav fw-bold fc-lightYellow">
+                        <ul role="list">
+                            <li><a href="">About</a></li>
+                            <li><a href="">Approach</a></li>
+                            <li><a href="">Fees</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="button">
+                        <button class="button fs-button">Contact</button>
+                    </div>
+                </div><!--end of mobileNavContent-->
+                
+                <!-- end of mobile navigation bar -->
             </div> <!-- end of navbar -->
         </header>
 
@@ -47,7 +73,7 @@
                         <h1 id="hero-title" class="fs-heroheading ff-accent fc-darkViolet fa-center">Tapped Out <br/>Counseling</h1>
                         <p class="fc-darkViolet fs-subheading fa-center">Cozy counseling from the comfort of your home.</p>
                         <div class="button">
-                            <button class="button">Let's Chat!</button>
+                            <button class="button fs-button">Let's Chat!</button>
                         </div>
                     </div> <!-- end of container -->
                     <div class="cloudContainer">
@@ -177,7 +203,7 @@
                    <br>You can contact me by sending an email, leaving a voicemail, or using the Book Consultation button.</p>
 
                 <div class="button fc-darkViolet">
-                    <button class="button"><a href="https://corrine-nightingale.clientsecure.me">Book Consultation</a></button>
+                    <button class="button fs-button"><a href="https://corrine-nightingale.clientsecure.me">Book Consultation</a></button>
                 </div>
             </div> <!-- end of container -->
         </section>
@@ -194,6 +220,22 @@
             </div> <!-- end of container -->
         </footer>
         <!-- end of footer -->
+
+        <!--Responsive Navbar Script -->
+        <script>
+            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+                function expandMobileNav() {
+
+                    var x = document.getElementById("mobileNav");
+
+                    if (x.className === "mobileNavbar") {
+                        x.className += " responsive";
+                    } 
+                    else {
+                        x.className = "mobileNavbar";
+                    }
+                }
+        </script>
         
     </body>
 

@@ -25,13 +25,13 @@ $phone: url(../img/phone.svg);
     z-index: 1;
 }
 
-@mixin phone ($top, $bottom, $left, $right) {
+@mixin phone ($top, $bottom, $left, $right, $height, $width) {
     content: '';
     background-image: $phone;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 250px;
-    width: 220px;
+    height: $height;
+    width: $width;
     top: $top;
     bottom: $bottom;
     left: $left;

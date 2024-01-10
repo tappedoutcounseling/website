@@ -60,6 +60,8 @@ $section-border: 2px solid purple;
 
     } //end of #hero
 
+
+    //start of #hero mobile styles
     @media (max-width: 768px ) {
 
         #hero {
@@ -73,6 +75,14 @@ $section-border: 2px solid purple;
 
             &::after {
                 @include sparkles ($lgSparkles, auto, -63px, auto, 1rem, 166px, 163px);
+            }
+
+            h1 {
+                padding-top: 3rem;
+            }
+
+            p {
+                padding-top: 1rem;
             }
 
             .cloudContainer {
@@ -94,7 +104,7 @@ $section-border: 2px solid purple;
             }
         }
 
-    }
+    } //end of hero mobile styles
 
 
     #about {
@@ -109,7 +119,8 @@ $section-border: 2px solid purple;
                 width: 90%;
                 margin: 0 auto;
             }
-            
+
+            //Responsive styling for larger screens
             @media (min-width: 60em) {
 
                 img {
@@ -136,7 +147,9 @@ $section-border: 2px solid purple;
 
         }
 
+        //Responsive styling for larger screens
         @media (min-width: 60rem) {
+
             .counselingStyleLists {
                 grid-template-columns: 1fr 2fr 2fr 1fr;
 
@@ -166,18 +179,38 @@ $section-border: 2px solid purple;
         }
 
         &::after {
-            @include phone (auto, 0, auto, 0);
+            @include phone (auto, 0, auto, 0, 250px, 220px);
         }
 
+        //start of #contact mobile styles
+        @media (max-width: 768px ) {
+
+            &::before {
+                @include sparkles ($lgSparkles, -3rem, auto, 1rem, auto, 140px, 134px);
+            }
+    
+            &::after {
+                @include phone (auto, -3rem, auto, -3rem, 175px, 175px);
+            }
+
+        }//of #contact mobile styles
          
     } //end of #contact
+
+    //start of #contact mobile styles
+    @media (max-width: 768px ) {
+
+        #contact {
+            height: 100vh;
+        }
+    }//end of #contact mobile styles
 
     footer {
 
         @include color-border (white, 15px, 5em);
 
         p {
-            padding-bottom: 2em;
+            margin-top: 1rem;
         }
     } //end of footer
 

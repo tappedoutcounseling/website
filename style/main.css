@@ -127,6 +127,36 @@ header .navbar ul li a:hover {
   text-decoration: underline;
   text-decoration-color: #E8A4C8;
 }
+header .mobileNavbar {
+  display: none;
+}
+@media (max-width: 768px) {
+  header .navbar {
+    display: none;
+  }
+  header .mobileNavbar {
+    overflow: hidden;
+    display: block;
+  }
+  header .mobileNavbar .mobileNavContent {
+    display: none;
+  }
+  header .mobileNavbar .pancake {
+    float: right;
+    display: block;
+  }
+  header .mobileNavbar .responsive {
+    position: relative;
+  }
+  header .mobileNavbar .responsive .pancake {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  header .mobileNavbar .responsive .mobileNavContent {
+    display: block;
+  }
+}
 
 /* Classes for Specific Components  */
 .container {
@@ -268,6 +298,12 @@ header .navbar ul li a:hover {
     position: absolute;
     z-index: 1;
   }
+  #home #hero h1 {
+    padding-top: 3rem;
+  }
+  #home #hero p {
+    padding-top: 1rem;
+  }
   #home #hero .cloudContainer img {
     width: 75vw;
   }
@@ -351,12 +387,47 @@ header .navbar ul li a:hover {
   position: absolute;
   z-index: 1;
 }
+@media (max-width: 768px) {
+  #home #contact::before {
+    content: "";
+    background-image: url(../img/lgSparkles.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 140px;
+    width: 134px;
+    top: -3rem;
+    bottom: auto;
+    left: 1rem;
+    right: auto;
+    position: absolute;
+    z-index: 1;
+  }
+  #home #contact::after {
+    content: "";
+    background-image: url(../img/phone.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 175px;
+    width: 175px;
+    top: auto;
+    bottom: -3rem;
+    left: auto;
+    right: -3rem;
+    position: absolute;
+    z-index: 1;
+  }
+}
+@media (max-width: 768px) {
+  #home #contact {
+    height: 100vh;
+  }
+}
 #home footer {
   border: 15px solid white;
   border-radius: 5em;
 }
 #home footer p {
-  padding-bottom: 2em;
+  margin-top: 1rem;
 }
 
 /* Utility Classes */
@@ -406,6 +477,14 @@ header .navbar ul li a:hover {
   }
   :root .fs-heroheading {
     font-size: 5.313rem;
+  }
+}
+@media (max-width: 768px) {
+  :root .fs-button {
+    font-size: 1.25rem;
+  }
+  :root .fs-subheading {
+    font-size: 1.25rem;
   }
 }
 .fc-darkViolet {
