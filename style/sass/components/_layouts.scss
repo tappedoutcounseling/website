@@ -43,6 +43,7 @@
         border: 7px solid $mediumPink;
         box-shadow: $darkViolet 5px 5px;
         transition: all .3s ease;
+        position: relative;
 
         &:hover {
             background-color: $mediumYellow;
@@ -54,6 +55,58 @@
         a{
             text-decoration: none;
         }
+
+        &:before {
+            content: '';
+            background-image: $lgSparkles;
+            background-size: contain;
+            background-repeat: no-repeat;
+            rotate: 180deg;
+            top: 0;
+            bottom: 0;
+            left: -.9rem;
+            right: auto;
+            margin: auto;
+            height: 27px;
+            width: 28px;
+            position: absolute;
+            z-index: -1;
+            transition: all .5s ease;
+            opacity: 0;
+        }
+        
+        &:after {
+            content: '';
+            background-image: $lgSparkles;
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: 0;
+            bottom: 0;
+            left: auto;
+            right: -.9rem;
+            margin: auto;
+            height: 27px;
+            width: 28px;
+            position: absolute;
+            z-index: -1;
+            transition: all .5s ease;
+            opacity: 0;
+        }
+
+        &:hover {
+            &:before {
+                top: -1.75rem;
+                z-index: -1;
+                opacity: 1;
+            }
+
+            &:after {
+                top: 1.75rem;
+                z-index: -1;
+                opacity: 1;
+            }
+        }
+    
     }
     
 }
