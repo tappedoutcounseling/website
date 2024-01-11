@@ -6,6 +6,7 @@ header {
         justify-content: flex-end;
         align-items: center;
         @include color-border (white, 1rem, 5rem);
+        padding-right: 1rem;
       
 
         ul {
@@ -16,17 +17,36 @@ header {
                 padding: 1em;
 
                 a {
+                    position: relative;
                     text-decoration: none;
-    
-                    &:hover {
-                        text-decoration: underline;
-                        text-decoration-color: $mediumPink;
-                    }
-                }
 
-            }
+                        &:before {
+                            content: "";
+                            display: block;
+                            background-color: $mediumPink;
+                            width: 0;
+                            height: .25rem;
+                            position: absolute;
+                            top: auto;
+                            bottom: -5px;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            transition: 0.2s ease all;
+                            z-index: 1;
+                            border-radius: 30px;
+                    }
+    
+                }//end of a
+
+                a:hover:before {
+                    width: 100%;
+                    bottom: -5px;
+                }// end of a:hover    
+
+            }//end of li
             
-        }     
+        }//end of ul     
 
     }//end of navbar
 
@@ -69,4 +89,4 @@ header {
 
     }//end of nav mobile styles
     
-} //end of header
+} //end of header 

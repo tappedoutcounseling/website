@@ -116,6 +116,7 @@ header .navbar {
   align-items: center;
   border: 1rem solid white;
   border-radius: 5rem;
+  padding-right: 1rem;
 }
 header .navbar ul {
   display: flex;
@@ -124,11 +125,28 @@ header .navbar ul li {
   padding: 1em;
 }
 header .navbar ul li a {
+  position: relative;
   text-decoration: none;
 }
-header .navbar ul li a:hover {
-  text-decoration: underline;
-  text-decoration-color: #E8A4C8;
+header .navbar ul li a:before {
+  content: "";
+  display: block;
+  background-color: #E8A4C8;
+  width: 0;
+  height: 0.25rem;
+  position: absolute;
+  top: auto;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.2s ease all;
+  z-index: 1;
+  border-radius: 30px;
+}
+header .navbar ul li a:hover:before {
+  width: 100%;
+  bottom: -5px;
 }
 header .mobileNavbar {
   display: none;
