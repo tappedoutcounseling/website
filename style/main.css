@@ -70,23 +70,26 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-body {
+html {
+  overflow-x: hidden;
+}
+html body {
   font-size: 1rem;
   font-family: "Raleway", sans-serif;
 }
-body p {
+html body p {
   margin-bottom: 1rem;
 }
-body section:not(#hero) {
+html body section:not(#hero) {
   padding: 3rem 1rem 2.5rem;
 }
-body section:not(#hero) h2 {
+html body section:not(#hero) h2 {
   position: relative;
   padding-bottom: 0.3em;
   margin-bottom: 1.5rem;
   width: fit-content;
 }
-body section:not(#hero) h2:after {
+html body section:not(#hero) h2:after {
   content: "";
   display: block;
   width: calc(100% + 5rem);
@@ -98,10 +101,10 @@ body section:not(#hero) h2:after {
   bottom: 0;
   left: 0;
 }
-body section:not(#hero) .centerAlignHeading {
+html body section:not(#hero) .centerAlignHeading {
   margin-inline: auto;
 }
-body section:not(#hero) .centerAlignHeading:after {
+html body section:not(#hero) .centerAlignHeading:after {
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
@@ -147,14 +150,12 @@ header .mobileNavbar {
   }
   header .mobileNavbar .responsive {
     position: relative;
+    display: block;
   }
   header .mobileNavbar .responsive .pancake {
     position: absolute;
     right: 0;
     top: 0;
-  }
-  header .mobileNavbar .responsive .mobileNavContent {
-    display: block;
   }
 }
 
