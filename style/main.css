@@ -225,6 +225,10 @@ header .mobileNavbar {
   background-color: #FFBE5C;
   color: #1D096C;
   border: 7px solid #FFDBA5;
+  box-shadow: 0 0;
+}
+.button button a {
+  text-decoration: none;
 }
 
 .gradientGridBackround {
@@ -321,6 +325,7 @@ header .mobileNavbar {
     border-radius: 0;
     max-width: 100vw;
     height: 100vh;
+    margin-top: 0;
   }
   #home #hero::before {
     content: "";

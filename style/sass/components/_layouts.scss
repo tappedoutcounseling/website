@@ -48,6 +48,11 @@
             background-color: $mediumYellow;
             color: $darkViolet;
             border: 7px solid $lightYellow;
+            box-shadow: 0 0;
+        }
+
+        a{
+            text-decoration: none;
         }
     }
     
