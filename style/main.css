@@ -592,6 +592,11 @@ header .mobileNavbar {
     height: 100vh;
   }
 }
+@media (max-width: 419px) {
+  #home #contact .fs-subheading {
+    font-size: 1rem;
+  }
+}
 #home footer {
   max-width: calc(100vw - 2rem);
   margin-inline: auto;
