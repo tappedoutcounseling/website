@@ -187,6 +187,10 @@ header .mobileNavbar {
     z-index: 2;
     font-size: xx-large;
     color: #FFBE5C;
+    background: #352967;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    border: 3px solid #E8A4C8;
   }
   header .mobileNavbar .mobileNavContent {
     display: none;

@@ -87,6 +87,10 @@ header {
                 z-index: 2;
                 font-size: xx-large;
                 color: $mediumYellow;
+                background: $darkPlum;
+                padding: .5rem 1rem;
+                border-radius: 15px;
+                border: 3px solid $mediumPink;
             }
 
             .mobileNavContent {
