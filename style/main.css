@@ -145,11 +145,11 @@ header .navbar ul {
 header .navbar ul li {
   padding: 1em;
 }
-header .navbar a, header .mobileNavbar a {
+header .navbar li a, header .mobileNavbar li a {
   position: relative;
   text-decoration: none;
 }
-header .navbar a:before, header .mobileNavbar a:before {
+header .navbar li a:before, header .mobileNavbar li a:before {
   content: "";
   display: block;
   background-color: #E8A4C8;
@@ -165,7 +165,7 @@ header .navbar a:before, header .mobileNavbar a:before {
   z-index: 1;
   border-radius: 30px;
 }
-header .navbar a:hover:before, header .navbar a:active:before, header .mobileNavbar a:hover:before, header .mobileNavbar a:active:before {
+header .navbar li a:hover:before, header .navbar li a:active:before, header .mobileNavbar li a:hover:before, header .mobileNavbar li a:active:before {
   width: 100%;
   bottom: -5px;
 }
