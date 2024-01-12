@@ -592,7 +592,7 @@ header .mobileNavbar {
     height: 100vh;
   }
 }
-@media (max-width: 419px) {
+@media (max-width: 500px) {
   #home #contact .fs-subheading {
     font-size: 1rem;
   }
