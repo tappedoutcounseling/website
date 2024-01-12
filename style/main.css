@@ -198,8 +198,14 @@ header .mobileNavbar {
   header .mobileNavbar .mobileNavContent li a {
     text-decoration: none;
   }
+  header .mobileNavbar .mobileNavContent li a:active {
+    color: #EAC8D9;
+  }
   header .mobileNavbar .mobileNavContent .button {
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin: 0.75rem 0 auto;
   }
   header .mobileNavbar .responsive {
     position: relative;
