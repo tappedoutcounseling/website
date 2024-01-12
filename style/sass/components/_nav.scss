@@ -86,9 +86,20 @@ header {
                 position: fixed;
                 width: 100vw;
                 z-index: 1;
+                padding: 2rem 1rem;
 
                 li {
                     text-align: center;
+                    padding: .75rem 0;
+                    border-bottom: 2px solid #261D48;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+
+                .button {
+                    margin: 0 auto;
                 }
             }
 
