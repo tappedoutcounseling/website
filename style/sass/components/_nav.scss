@@ -20,41 +20,43 @@ header {
 
             li {
 
-                padding: 1em;
-
-                a {
-                    position: relative;
-                    text-decoration: none;
-
-                        &:before {
-                            content: "";
-                            display: block;
-                            background-color: $mediumPink;
-                            width: 0;
-                            height: .25rem;
-                            position: absolute;
-                            top: auto;
-                            bottom: -5px;
-                            left: 0;
-                            right: 0;
-                            margin: auto;
-                            transition: 0.2s ease all;
-                            z-index: 1;
-                            border-radius: 30px;
-                    }
-    
-                }//end of a
-
-                a:hover:before, a:active:before {
-                    width: 100%;
-                    bottom: -5px;
-                }// end of a:hover    
+                padding: 1em;  
 
             }//end of li
             
         }//end of ul     
 
     }//end of navbar
+
+    .navbar, .mobileNavbar {
+        a {
+            position: relative;
+            text-decoration: none;
+
+                &:before {
+                    content: "";
+                    display: block;
+                    background-color: $mediumPink;
+                    width: 0;
+                    height: .25rem;
+                    position: absolute;
+                    top: auto;
+                    bottom: -5px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    transition: 0.2s ease all;
+                    z-index: 1;
+                    border-radius: 30px;
+            }
+
+        }//end of a
+
+        a:hover:before, a:active:before {
+            width: 100%;
+            bottom: -5px;
+        }// end of a:hover  
+    }
 
     .mobileNavbar {
         display: none;
