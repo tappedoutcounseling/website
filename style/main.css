@@ -212,10 +212,6 @@ header .mobileNavbar {
     justify-content: center;
     margin: 0.75rem 0 auto;
   }
-  header .mobileNavbar .responsive {
-    position: relative;
-    display: block;
-  }
 }
 
 /* Classes for Specific Components  */
