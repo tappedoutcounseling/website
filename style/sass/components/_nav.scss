@@ -67,12 +67,29 @@ header {
             display: none;
         }//end of navbar
 
-        .mobileNavbar {
+        .mobileNavbar { 
             overflow: hidden;
-            display: none;
+            display: block;
+            
+
+            .pancake {
+                position: fixed;
+                top: 1.5rem;
+                right: 1.5rem;
+                z-index: 2;
+                font-size: xx-large;
+                color: $mediumYellow;
+            }
 
             .mobileNavContent {
-                //display: none;
+                display: none;
+                position: fixed;
+                width: 100vw;
+                z-index: 1;
+
+                li {
+                    text-align: center;
+                }
             }
 
             .responsive {

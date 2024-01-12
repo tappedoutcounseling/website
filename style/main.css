@@ -173,7 +173,24 @@ header .mobileNavbar {
   }
   header .mobileNavbar {
     overflow: hidden;
+    display: block;
+  }
+  header .mobileNavbar .pancake {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 2;
+    font-size: xx-large;
+    color: #FFBE5C;
+  }
+  header .mobileNavbar .mobileNavContent {
     display: none;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+  }
+  header .mobileNavbar .mobileNavContent li {
+    text-align: center;
   }
   header .mobileNavbar .responsive {
     position: relative;
