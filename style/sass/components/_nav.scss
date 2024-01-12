@@ -69,28 +69,18 @@ header {
 
         .mobileNavbar {
             overflow: hidden;
-            display: block;
+            display: none;
 
             .mobileNavContent {
-                display: none;
-            }
-
-            .pancake {
-                float: right;
-                display: block;
+                //display: none;
             }
 
             .responsive {
                 position: relative;
                 display: block;
 
-                .pancake {
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                }
-
             }
+
         }//end of mobileNavbar
 
     }//end of nav mobile styles

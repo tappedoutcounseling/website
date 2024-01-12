@@ -23,7 +23,7 @@
         <header>
             <div class="navbar mediumPink-border-thin bc-darkPlum">
                 <!-- start of navigation bar -->
-                <img src="https://placehold.co/75x75/DE8CB8/1F3A7D" alt="logo" class="logo">
+                <!-- img src="https://placehold.co/75x75/DE8CB8/1F3A7D" alt="logo" class="logo" -->
 
                 <nav class="ff-accent fs-nav fw-bold fc-lightYellow">
                     <ul role="list">
@@ -41,12 +41,9 @@
 
             <div id="mobileNav" class="mobileNavbar">
                 <!-- start of mobile navigation bar -->
-                <a href="javascript:void(0);" class="pancake icon" onclick="expandMobileNav()">
-                    <i class="fa fa-bars"></i>
-                </a>
 
                 <div class="mobileNavContent bc-darkPlum">
-                    <img src="https://placehold.co/75x75/DE8CB8/1F3A7D" alt="logo" class="logo">
+                    <!-- img src="https://placehold.co/75x75/DE8CB8/1F3A7D" alt="logo" class="logo" -->
 
                     <nav class="ff-accent fs-nav fw-bold fc-lightYellow">
                         <ul role="list">
@@ -69,6 +66,9 @@
         <main>
                 <!-- start of hero content -->
                 <section id="hero" class="gradientGridBackround mediumPink-border-thin" aria-labelledby="hero-title">
+                    <a href="javascript:void(0);" class="pancake icon" onclick="toggleMobileNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                     <div class="container">
                         <h1 id="hero-title" class="fs-heroheading ff-accent fc-darkViolet fa-center">Tapped Out <br/>Counseling</h1>
                         <p class="fc-darkViolet fs-subheading fa-center">Cozy counseling from the comfort of your home.</p>
@@ -196,8 +196,11 @@
                         <p class="fs-subheading fc-darkViolet">Email&#58; corrine@tappedoutcounseling.com<br>
                         Phone&#58; (971) 801-8252</p>
 
-                        <p class="fc-darkViolet">Curious to see if we will be a good fit? Book a free 20-minute consultation appointment today!
+                        <p class="fc-darkViolet mobile-hide">Curious to see if we will be a good fit? Book a free 20-minute consultation appointment today!
                         <br>You can contact me by sending an email, leaving a voicemail, or using the Book Consultation button.</p>
+
+                        <p class="fc-darkViolet desktop-hide">Curious to see if we will be a good fit? Book a free 20-minute consultation appointment today!
+                            You can contact me by sending an email, leaving a voicemail, or using the Book Consultation button.</p>
 
                         <div class="button fc-darkViolet">
                             <button class="button fs-button"><a href="https://corrine-nightingale.clientsecure.me">Book Consultation</a></button>
@@ -227,17 +230,18 @@
         <!--Responsive Navbar Script -->
         <script>
             /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-                function expandMobileNav() {
+                function toggleMobileNav() {
 
                     var x = document.getElementById("mobileNav");
 
-                    if (x.className === "mobileNavContent") {
-                        x.className += " responsive";
-                    } 
-                    else {
-                        x.className = "mobileNavContent";
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
                     }
                 }
+
+                
 
                 //Add script for closing menu, adding X icon, and adding isActive class on scroll and onClick to nav items
         </script>

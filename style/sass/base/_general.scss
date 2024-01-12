@@ -7,6 +7,10 @@ html {
 		font-size: $fs-body;
 		font-family: $ff-base;
 
+		.desktop-hide {
+			display: none;
+		}
+
 		p {
 			margin-bottom: 1rem; 
 		}
@@ -49,6 +53,20 @@ html {
 			}
 		}
 	} 
+
+	//Classes to hide/show content on mobile
+	@media (max-width: 768px ) {
+
+        body {
+            .desktop-hide {
+				display: block;
+			}
+
+			.mobile-hide {
+				display: none;
+			}
+        }
+    }
 
 } 
 

@@ -77,6 +77,9 @@ html body {
   font-size: 1rem;
   font-family: "Raleway", sans-serif;
 }
+html body .desktop-hide {
+  display: none;
+}
 html body p {
   margin-bottom: 1rem;
 }
@@ -108,6 +111,14 @@ html body section:not(#hero) .centerAlignHeading:after {
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  html body .desktop-hide {
+    display: block;
+  }
+  html body .mobile-hide {
+    display: none;
+  }
 }
 
 header .navbar {
@@ -162,23 +173,11 @@ header .mobileNavbar {
   }
   header .mobileNavbar {
     overflow: hidden;
-    display: block;
-  }
-  header .mobileNavbar .mobileNavContent {
     display: none;
-  }
-  header .mobileNavbar .pancake {
-    float: right;
-    display: block;
   }
   header .mobileNavbar .responsive {
     position: relative;
     display: block;
-  }
-  header .mobileNavbar .responsive .pancake {
-    position: absolute;
-    right: 0;
-    top: 0;
   }
 }
 
