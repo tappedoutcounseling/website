@@ -495,6 +495,37 @@ header .mobileNavbar {
   z-index: 1;
   animation: float 3s ease-in-out infinite;
 }
+@media (min-width: 768px) and (max-width: 1250px) {
+  #home #contact::before {
+    content: "";
+    background-image: url(../img/lgSparkles.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    top: 2rem;
+    bottom: auto;
+    left: 2rem;
+    right: auto;
+    position: absolute;
+    z-index: 1;
+    z-index: -1;
+  }
+  #home #contact::after {
+    content: "";
+    background-image: url(../img/phone.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 120px;
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+  }
+}
 @media (max-width: 768px) {
   #home #contact::before {
     content: "";
