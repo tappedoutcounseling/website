@@ -72,6 +72,7 @@ textarea:not([rows]) {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth !important;
 }
 html body {
   font-size: 1rem;
@@ -85,6 +86,7 @@ html body p {
 }
 html body section:not(#hero) {
   padding: 3rem 1rem 2.5rem;
+  scroll-margin-top: 3rem;
 }
 html body section:not(#hero) h2 {
   position: relative;
