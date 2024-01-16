@@ -15,7 +15,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style/main.css">
-        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
@@ -23,7 +23,7 @@
         <header>
             <div class="navbar mediumPink-border-thin bc-darkPlum">
                 <!-- start of navigation bar -->
-                <!-- img src="https://placehold.co/75x75/DE8CB8/1F3A7D" alt="logo" class="logo" -->
+                <a href="#hero"><img src="img/moonCloud.png" alt="logo" class="logo"></a>
 
                 <nav class="ff-accent fs-nav fw-bold fc-lightYellow">
                     <ul role="list">
@@ -240,6 +240,27 @@
                         x.style.display = "block";
                     }
                 }
+
+                /*
+                const sections = document.querySelectorAll("section");
+                const navLi = document.querySelectorAll("nav ul li");    
+
+                window.onscroll = () => {
+                    var current = "";
+
+                    sections.forEach((section) => {
+                        const sectionTop = section.offsetTop;
+                        if (pageYOffset >= sectionTop ) {
+                        current = section.getAttribute("id"); }
+                    });
+
+                    navLi.forEach((li) => {
+                        li.classList.remove("active");
+                        if (li.classList.contains(current)) {
+                        li.classList.add("active");
+                        }
+                    });
+                };*/
 
                 
 
