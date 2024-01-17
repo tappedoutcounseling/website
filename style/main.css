@@ -141,6 +141,9 @@ header .navbar {
   margin: 1rem auto;
   z-index: 1;
 }
+header .navbar .logo {
+  width: 100px;
+}
 header .navbar ul {
   display: flex;
 }
