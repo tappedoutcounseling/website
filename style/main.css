@@ -88,6 +88,10 @@ html body section:not(#hero) {
   padding: 3rem 1rem 2.5rem;
   scroll-margin-top: 3rem;
 }
+html body section:not(#hero) a {
+  color: #1D096C;
+  font-weight: 700;
+}
 html body section:not(#hero) h2 {
   position: relative;
   padding-bottom: 0.3em;
@@ -118,6 +122,9 @@ html body section:not(#hero) .centerAlignHeading:after {
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
+}
+html body section:not(#hero) h3 {
+  padding-bottom: 0.5rem;
 }
 @media (max-width: 768px) {
   html body .desktop-hide {
