@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="Cozy online counseling for nerds, geeks, and tech folks. Currently available for Oregon residents only.">
-        <meta name="keywords" content="Tapped Out Counseling, Portland Counseling, Portland Therapy, Portland Therapist,">
+        <meta name="keywords" content="Tapped Out Counseling, Portland Counseling, Portland Therapy, Portland Therapist, Corrine Nightingale">
         <meta name="author" content="Corrine Nightingale">
 
         <title>Tapped Out Counseling</title>
@@ -15,15 +15,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style/main.css">
-        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script defer src="https://us.umami.is/script.js" data-website-id="f3a35fe2-ed14-4cba-b425-171378c3bab5"></script>
     </head>
 
     <body id="home">
         <header>
             <div class="navbar mediumPink-border-thin bc-darkPlum">
                 <!-- start of navigation bar -->
-                <!-- img src="https://placehold.co/75x75/DE8CB8/1F3A7D" alt="logo" class="logo" -->
+                <!--a href="#hero"><img src="img/sleepyCloud.svg" alt="logo" class="logo"></a-->
 
                 <nav class="ff-accent fs-nav fw-bold fc-lightYellow">
                     <ul role="list">
@@ -41,8 +42,10 @@
 
             <div id="mobileNav" class="mobileNavbar">
                 <!-- start of mobile navigation bar -->
-
-                <div class="mobileNavContent bc-darkPlum">
+                <a href="javascript:void(0);" class="pancake icon" onclick="toggleMobileNav()">
+                    <i class="fa fa-bars" aria-label="Menu"></i>
+                </a>
+                <div id="mobileNavContent" class="mobileNavContent bc-darkPlum">
                     <!-- img src="https://placehold.co/75x75/DE8CB8/1F3A7D" alt="logo" class="logo" -->
 
                     <nav class="ff-accent fs-nav fw-bold fc-lightYellow">
@@ -66,9 +69,7 @@
         <main>
                 <!-- start of hero content -->
                 <section id="hero" class="gradientGridBackround mediumPink-border-thin" aria-labelledby="hero-title">
-                    <a href="javascript:void(0);" class="pancake icon" onclick="toggleMobileNav()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+                    
                     <div class="container">
                         <h1 id="hero-title" class="fs-heroheading ff-accent fc-darkViolet fa-center">Tapped Out <br/>Counseling</h1>
                         <p class="fc-darkViolet fs-subheading fa-center">Cozy counseling from the comfort of your home.</p>
@@ -124,7 +125,7 @@
 
                         <div class="counselingStyleLists">
                             <div id="specialties" class="counselingStyleBox mediumPink-border">
-                                <h3 class="fs-subheading fw-bold">Specialty Areas</h3>
+                                <h3 class="fs-subheading ff-accent fw-bold fc-darkViolet">Specialty Areas</h3>
                                 <ul>
                                     <li>Chronic illness and disability</li>
                                     <li>Neurodivergence</li>
@@ -136,7 +137,7 @@
                             </div>
                             
                             <div id="populations" class="counselingStyleBox mediumPink-border">
-                                <h3 class="fs-subheading fw-bold">Populations of Interest</h3>
+                                <h3 class="fs-subheading ff-accent fw-bold fc-darkViolet">Populations of Interest</h3>
                                 <ul>
                                     <li>Disabled and/or chronically ill individuals</li>
                                     <li>Black, Indigenous, and People of Color (BIPOC), particularly biracial or multiracial individuals</li>
@@ -164,6 +165,31 @@
                         my full rate.</p>
 
                         <p>Clients must be located in the state of Oregon. Currently telehealth only.</p>
+
+                        <p><span class="fw-bold">Individual Counseling Rate&#58;</span> $120 - $175 for 50 minutes.<br>
+                        <span class="fw-bold">Intake Sessions&#58;</span> $150 - $175 for 75 minutes.</p>
+
+                        <h3 class="fs-subheading ff-accent fw-bold fc-darkViolet"><a href="https://forms.gle/SocdXuXJGfcTsBxLA">BIPOC Expressive Arts Group</a></h3>
+
+                        <p><span class="fw-bold">When:</span> Tuesdays at 5 p.m., February 20th - April 23rd, 2024.
+
+                        <br><span class="fw-bold">Where:</span> Online
+
+                        <br><span class="fw-bold">Group Session Rate&#58;</span> $40 for 60 minutes.</p>
+
+                        <p>Looking for an excuse to use some art supplies? Join me and my co-facilitator, <a href="https://www.crybaby.care/frankie">Frankie Forrester</a>
+                        &#40;Professional Counselor Associate, MS, NCC&#41; for this online interpersonal process group! This
+                         is a BIPOC-only space to build community, explore identity, and develop 
+                         interpersonal skills. Group leaders will facilitate guided art prompts to 
+                         cultivate self-awareness and encourage group discussion. Weekly attendance is required. Participants must be located in Oregon state.</p>
+                        
+
+                         <div class="button fc-darkViolet">
+                            <button class="button fs-button"><a href="https://forms.gle/SocdXuXJGfcTsBxLA">Learn More</a></button>
+                        </div>
+
+                        
+
 
                         <p><span class="fw-bold">Individual Counseling Rate&#58;</span> $150 for 50 minutes.<br>
                         <span class="fw-bold">Intake Sessions&#58;</span> $175 for 75 minutes.</p>
@@ -221,7 +247,7 @@
             <div class="container fc-lightYellow fa-center">
                 <p>Supervised by Sofia Jasani, MS, LPC, NCC<br>
                     Tapped Out Counseling LLC 2023<br>
-                    <a href="">Privacy Policy</a> | <a href="https://www.cms.gov/NOSURPRISES">No Surprises Act</a></p>
+                    <!--a href="">Privacy Policy</a> | --> <a href="https://www.cms.gov/NOSURPRISES">No Surprises Act</a></p>
                 
             </div> <!-- end of container -->
         </footer>
@@ -229,10 +255,10 @@
 
         <!--Responsive Navbar Script -->
         <script>
-            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+            /* Toggle between adding and removing the "display: block" to mobileNavContent when the user clicks on the icon */
                 function toggleMobileNav() {
 
-                    var x = document.getElementById("mobileNav");
+                    var x = document.getElementById("mobileNavContent");
 
                     if (x.style.display === "block") {
                         x.style.display = "none";
@@ -240,6 +266,27 @@
                         x.style.display = "block";
                     }
                 }
+
+                /*
+                const sections = document.querySelectorAll("section");
+                const navLi = document.querySelectorAll("nav ul li");    
+
+                window.onscroll = () => {
+                    var current = "";
+
+                    sections.forEach((section) => {
+                        const sectionTop = section.offsetTop;
+                        if (pageYOffset >= sectionTop ) {
+                        current = section.getAttribute("id"); }
+                    });
+
+                    navLi.forEach((li) => {
+                        li.classList.remove("active");
+                        if (li.classList.contains(current)) {
+                        li.classList.add("active");
+                        }
+                    });
+                };*/
 
                 
 

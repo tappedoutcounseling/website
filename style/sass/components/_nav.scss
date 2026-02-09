@@ -13,6 +13,10 @@ header {
         width: calc(100vw - 2rem);
         margin: 1rem auto;
         z-index: 1;
+
+        .logo {
+            width: 100px;
+        }
             
       
         ul {
@@ -20,41 +24,49 @@ header {
 
             li {
 
-                padding: 1em;
-
-                a {
-                    position: relative;
-                    text-decoration: none;
-
-                        &:before {
-                            content: "";
-                            display: block;
-                            background-color: $mediumPink;
-                            width: 0;
-                            height: .25rem;
-                            position: absolute;
-                            top: auto;
-                            bottom: -5px;
-                            left: 0;
-                            right: 0;
-                            margin: auto;
-                            transition: 0.2s ease all;
-                            z-index: 1;
-                            border-radius: 30px;
-                    }
-    
-                }//end of a
-
-                a:hover:before, a:active:before {
-                    width: 100%;
-                    bottom: -5px;
-                }// end of a:hover    
+                padding: 1em;  
 
             }//end of li
             
         }//end of ul     
 
     }//end of navbar
+
+    .navbar, .mobileNavbar {
+
+        li {
+
+            a {
+                position: relative;
+                text-decoration: none;
+    
+                    &:before {
+                        content: "";
+                        display: block;
+                        background-color: $mediumPink;
+                        width: 0;
+                        height: .25rem;
+                        position: absolute;
+                        top: auto;
+                        bottom: -5px;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        transition: 0.2s ease all;
+                        z-index: 1;
+                        border-radius: 30px;
+                }
+    
+            }//end of a
+    
+            a:hover:before, a:active:before {
+                width: 100%;
+                bottom: -5px;
+            }// end of a:hover 
+
+        }
+         
+    }
 
     .mobileNavbar {
         display: none;
@@ -67,19 +79,56 @@ header {
             display: none;
         }//end of navbar
 
-        .mobileNavbar {
+        .mobileNavbar { 
             overflow: hidden;
-            display: none;
+            display: block;
+            
+
+            .pancake {
+                position: fixed;
+                top: 1.5rem;
+                right: 1.5rem;
+                z-index: 2;
+                font-size: xx-large;
+                color: $mediumYellow;
+                background: $darkPlum;
+                padding: .5rem 1rem;
+                border-radius: 15px;
+                border: 3px solid $mediumPink;
+            }
 
             .mobileNavContent {
-                //display: none;
+                display: none;
+                position: fixed;
+                width: 100vw;
+                z-index: 1;
+                padding-top: 3rem;
+                padding-bottom: 1.6rem;
+                border-radius: 0 0 30px 30px;
+
+                li {
+                    text-align: center;
+                    padding: .75rem 0;
+                    border-bottom: 2px solid #292050;
+
+                    a {
+                        text-decoration: none;
+
+                        &:active {
+                            color: $lightPink;
+                        }
+                    }
+                }
+
+                .button {
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    margin: .75rem 0 auto;
+                }
             }
 
-            .responsive {
-                position: relative;
-                display: block;
-
-            }
+          
 
         }//end of mobileNavbar
 

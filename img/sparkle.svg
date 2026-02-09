@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="110.89473mm"
+   height="111.20276mm"
+   viewBox="0 0 110.89473 111.20276"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="lgSparkles.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-19.161143,-44.084689)">
+    <path
+       sodipodi:type="star"
+       style="fill:#ffdba5;fill-opacity:1;stroke:#ffbe5c;stroke-width:4.058;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path2-8"
+       inkscape:flatsided="false"
+       sodipodi:sides="4"
+       sodipodi:cx="146.02283"
+       sodipodi:cy="159.58209"
+       sodipodi:r1="28.956158"
+       sodipodi:r2="13.134743"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="2.3281154"
+       inkscape:rounded="0.097269772"
+       inkscape:randomized="0"
+       d="m 146.02283,188.53825 c -2.08135,0.0585 -7.55094,-17.93908 -9.02325,-19.4114 -1.52006,-1.52006 -19.87254,-7.39591 -19.93291,-9.54476 -0.0585,-2.08134 17.93908,-7.55094 19.4114,-9.02325 1.52006,-1.52005 7.39591,-19.87253 9.54476,-19.93291 2.08134,-0.0585 7.55094,17.93908 9.02325,19.4114 1.52005,1.52007 19.87253,7.39592 19.9329,9.54476 0.0585,2.08135 -17.93907,7.55094 -19.41139,9.02325 -1.52007,1.52006 -7.39592,19.87254 -9.54476,19.93291 z"
+       inkscape:transform-center-x="1.8396576e-06"
+       inkscape:transform-center-y="-2.010483e-06"
+       transform="translate(-69.543364,-81.680617)"
+       inkscape:export-filename="medSparkle.svg"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
+  </g>
+</svg>

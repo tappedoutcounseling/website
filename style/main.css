@@ -72,6 +72,7 @@ textarea:not([rows]) {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth !important;
 }
 html body {
   font-size: 1rem;
@@ -85,6 +86,11 @@ html body p {
 }
 html body section:not(#hero) {
   padding: 3rem 1rem 2.5rem;
+  scroll-margin-top: 3rem;
+}
+html body section:not(#hero) a {
+  color: #1D096C;
+  font-weight: 700;
 }
 html body section:not(#hero) h2 {
   position: relative;
@@ -104,6 +110,11 @@ html body section:not(#hero) h2:after {
   bottom: 0;
   left: 0;
 }
+@media (max-width: 768px) {
+  html body section:not(#hero) h2 {
+    padding-bottom: 0.6em;
+  }
+}
 html body section:not(#hero) .centerAlignHeading {
   margin-inline: auto;
 }
@@ -111,6 +122,9 @@ html body section:not(#hero) .centerAlignHeading:after {
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
+}
+html body section:not(#hero) h3 {
+  padding-bottom: 0.5rem;
 }
 @media (max-width: 768px) {
   html body .desktop-hide {
@@ -134,17 +148,20 @@ header .navbar {
   margin: 1rem auto;
   z-index: 1;
 }
+header .navbar .logo {
+  width: 100px;
+}
 header .navbar ul {
   display: flex;
 }
 header .navbar ul li {
   padding: 1em;
 }
-header .navbar ul li a {
+header .navbar li a, header .mobileNavbar li a {
   position: relative;
   text-decoration: none;
 }
-header .navbar ul li a:before {
+header .navbar li a:before, header .mobileNavbar li a:before {
   content: "";
   display: block;
   background-color: #E8A4C8;
@@ -160,7 +177,7 @@ header .navbar ul li a:before {
   z-index: 1;
   border-radius: 30px;
 }
-header .navbar ul li a:hover:before, header .navbar ul li a:active:before {
+header .navbar li a:hover:before, header .navbar li a:active:before, header .mobileNavbar li a:hover:before, header .mobileNavbar li a:active:before {
   width: 100%;
   bottom: -5px;
 }
@@ -173,11 +190,45 @@ header .mobileNavbar {
   }
   header .mobileNavbar {
     overflow: hidden;
-    display: none;
-  }
-  header .mobileNavbar .responsive {
-    position: relative;
     display: block;
+  }
+  header .mobileNavbar .pancake {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 2;
+    font-size: xx-large;
+    color: #FFBE5C;
+    background: #352967;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    border: 3px solid #E8A4C8;
+  }
+  header .mobileNavbar .mobileNavContent {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    padding-top: 3rem;
+    padding-bottom: 1.6rem;
+    border-radius: 0 0 30px 30px;
+  }
+  header .mobileNavbar .mobileNavContent li {
+    text-align: center;
+    padding: 0.75rem 0;
+    border-bottom: 2px solid #292050;
+  }
+  header .mobileNavbar .mobileNavContent li a {
+    text-decoration: none;
+  }
+  header .mobileNavbar .mobileNavContent li a:active {
+    color: #EAC8D9;
+  }
+  header .mobileNavbar .mobileNavContent .button {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin: 0.75rem 0 auto;
   }
 }
 
@@ -282,7 +333,7 @@ header .mobileNavbar {
   overflow: hidden;
   isolation: isolate;
   background-position: bottom;
-  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' opacity='.7' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(3) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='0.5' stroke='hsla(0, 0%, 100%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>"), linear-gradient(45deg, rgb(232, 164, 200) 0%, rgb(175, 188, 220) 100%);
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' opacity='.5' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(3) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='0.5' stroke='hsla(0, 0%, 100%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>"), linear-gradient(45deg, rgb(232, 164, 200) 0%, rgb(175, 188, 220) 100%);
 }
 
 @keyframes float {
@@ -558,6 +609,11 @@ header .mobileNavbar {
 @media (max-width: 768px) {
   #home #contact {
     height: 100vh;
+  }
+}
+@media (max-width: 500px) {
+  #home #contact .fs-subheading {
+    font-size: 1rem;
   }
 }
 #home footer {
