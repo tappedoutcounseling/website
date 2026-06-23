@@ -16,6 +16,10 @@ html {
 			margin-bottom: 1rem; 
 		}
 
+		ul {
+			list-style-position: inside;
+		}
+
 		section:not(#hero) {
 	
 			padding: 3rem 1rem 2.5rem;
