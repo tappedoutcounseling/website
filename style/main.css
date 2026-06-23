@@ -81,7 +81,7 @@ html body {
 html body .desktop-hide {
   display: none;
 }
-html body p {
+html body p, html body ul, html body ol {
   margin-bottom: 1rem;
 }
 html body section:not(#hero) {
